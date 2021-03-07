@@ -54,7 +54,7 @@ export default {
   },
 
   router: {
-    trailingSlash: true
+    trailingSlash: false
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
