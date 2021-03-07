@@ -25,7 +25,6 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
-  mode: "universal",
   ssr: true,
   target: "static",
 
