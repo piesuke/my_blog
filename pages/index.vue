@@ -28,6 +28,7 @@
 
 <script>
 export default {
+  
   async asyncData ({ $content }) {
     const pages = await $content('articles').sortBy('created_at','desc').fetch()
     const about = await $content('about').fetch()
