@@ -2,7 +2,7 @@
  <v-main>
    <v-container>
      <a :href="about.slug">
-       About Me
+       About-Me
      </a>
      <ul class="list-style">
        
