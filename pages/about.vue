@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  async asyncData ({ $content, params }) {
+  async created ({ $content, params }) {
     const slug = params.slug
     const page = await $content('about').fetch()
 
