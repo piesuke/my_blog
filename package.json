@@ -19,6 +19,7 @@
     "@nuxt/types": "^2.14.12",
     "@nuxt/typescript-build": "^2.0.4",
     "@nuxtjs/date-fns": "^1.4.3",
+    "@nuxtjs/vercel-builder": "^0.21.2",
     "@nuxtjs/vuetify": "^1.11.3"
   }
 }
