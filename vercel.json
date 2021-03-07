@@ -1,15 +1,6 @@
 {
     "version": 2,
     "public": true,
-    "builds": [
-      {
-        "src": "nuxt.config.js",
-        "use": "@nuxtjs/vercel-builder",
-        "config": {
-          "serverFiles": ["package.json"]
-        }
-      }
-    ],
     "routes": [
       { "src": "/_nuxt/.+", "headers": { "Cache-Control": "public, max-age=31536000" } },
       {
