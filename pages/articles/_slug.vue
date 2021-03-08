@@ -17,10 +17,9 @@
 
 <script>
 export default {
-  async created ({ $content, params }) {
+  async asyncData ({ $content, params }) {
     const slug = params.slug
     const page = await $content('articles/'+ slug).fetch()
-
     return {
       page
     }
