@@ -1,6 +1,7 @@
 {
     "version": 2,
     "public": true,
+    
     "routes": [
       { "src": "/_nuxt/.+", "headers": { "Cache-Control": "public, max-age=31536000" } },
       {
