@@ -3,12 +3,13 @@
     <article>
       <div class="midashi">
         <h1>{{ page.title }}</h1>
+        {{page}}
       </div>
       <nuxt-content :document="page" />
     </article>
     <v-container class="mt-15">
       <v-col align="center" col=4>
-        <a class="text--primary underline" href="/">記事一覧</a>
+        <NuxtLink class="text--primary underline" to="/">記事一覧</NuxtLink>
       </v-col>
     </v-container>
   </v-main>
@@ -16,10 +17,10 @@
 
 <script>
 export default {
-  async asyncData ({ $content, params }) {
-    const slug = params.slug
+  async asyncData ({ $content }) {
+    
     const page = await $content('about').fetch()
-
+    
     return {
       page
     }

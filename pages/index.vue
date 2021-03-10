@@ -1,21 +1,21 @@
 <template>
  <v-main>
    <v-container>
-     <a :href="about.slug">
+     <NuxtLink :to="about.slug" >
        About-Me
-     </a>
+     </NuxtLink>
      <ul class="list-style">
        
        <li v-for="page in pages" :key="page.title" class="py-5">
          <v-hover v-slot="{ hover }">
-          <a v-bind:href="'articles/'+ page.slug">
+          <NuxtLink :to="'articles/'+ page.slug">
           <v-card outlined :elevation="hover ? 12 : 2"
               :class="{ 'on-hover': hover }">
             <v-card-title>{{ page.title }}</v-card-title>
             <v-card-text>{{ page.description }}</v-card-text>
             <v-card-text>{{ $dateFns.format(page.created_at ,'yyyy-MM-dd') }}</v-card-text>
           </v-card>
-          </a>
+          </NuxtLink>
           </v-hover>
         </li>
         

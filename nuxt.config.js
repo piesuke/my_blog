@@ -25,7 +25,6 @@ export default {
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
-  ssr: true,
   target: "static",
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
@@ -44,12 +43,12 @@ export default {
     "@nuxt/content"
   ],
 
-  // generate: {
-  //   async ready() {
-  //     const { $content } = require("@nuxt/content");
-  //     const files = await $content().fetch();
-  //   }
-  // },
+  generate: {
+    async ready() {
+      const { $content } = require("@nuxt/content");
+      const files = await $content().fetch();
+    }
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
