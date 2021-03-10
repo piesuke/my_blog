@@ -17,11 +17,31 @@
 
 <script>
 export default {
+  data () {
+    return {
+      meta: {
+        title: this.page.title,
+        type: 'article',
+        url: `https://my-blog-pb4rqldgo-piesuke.vercel.app/${slug}`,
+      },
+    }
+  },
+  head () {
+    return {
+      title: this.page.title,
+      meta: [
+        { hid: 'description', name: 'description', content: this.meta.description },
+        { hid: 'og:type', property: 'og:type', content: this.meta.type },
+        { hid: 'og:title', property: 'og:title', content: this.page.title },
+        { hid: 'og:url', property: 'og:url', content: this.meta.url },
+      ],
+    }
+  },
   async asyncData ({ $content, params }) {
     const slug = params.slug
     const page = await $content('articles/'+ slug).fetch()
     return {
-      page
+      page,
     }
   }
 }

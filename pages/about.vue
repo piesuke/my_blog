@@ -3,7 +3,6 @@
     <article>
       <div class="midashi">
         <h1>{{ page.title }}</h1>
-        {{page}}
       </div>
       <nuxt-content :document="page" />
     </article>

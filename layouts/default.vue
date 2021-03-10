@@ -1,10 +1,10 @@
 <template>
   <v-app>
     <header>
-      <div class="wrap">
+      <div class="wrap pa-xs-10">
         <div class="site-title">
           <a href="/">
-            <h2>ここに良い感じのタイトルをつけたい</h2>
+            <h2 class="main-title">一朶の雲を目指して</h2>
           </a>
         </div>
       </div>
@@ -13,9 +13,6 @@
     <v-main>
       <v-container>
         <v-row>
-          <!-- <v-col cols=12 lg=12 md=12 sm=12 align="center" class="mt-5 mb-10">
-          <h2>ここに良い感じのタイトルをつけたい</h2>
-        </v-col> -->
           <v-col cols="12" xs="8" md="12" class="ms-auto">
             <nuxt />
           </v-col>
@@ -73,7 +70,7 @@ a {
   text-decoration: none;
 }
 header {
-  background: url("~/assets/img/header.jpg") no-repeat 50% 50%;
+  background: url("~/assets/img/header.jpg") no-repeat 30% 40%;
   display: block;
   position: relative;
   .wrap {
@@ -97,7 +94,10 @@ header {
     left: 0;
     width: 100%;
     z-index: 0;
-    background-color: rgba(59, 86, 103, 0.7);
+    background-color: rgba(59, 86, 103, 0.5);
+  }
+  .main-title{
+    
   }
 }
 </style>

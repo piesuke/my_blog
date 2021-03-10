@@ -3,15 +3,32 @@ import colors from "vuetify/es5/util/colors";
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "%s - myBlog",
-    title: "myBlog",
+    titleTemplate: "%s",
+    title: "一朶の雲を目指して",
     htmlAttrs: {
       lang: "en"
     },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" }
+      { hid: "description", name: "description", content: "" },
+      {
+        hid: "og:site_name",
+        property: "og:site_name",
+        content: "一朶の雲を目指して"
+      },
+      { hid: "og:type", property: "og:type", content: "website" },
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: "https://my-blog-pb4rqldgo-piesuke.vercel.app/"
+      },
+      { hid: "og:title", property: "og:title", content: "一朶の雲を目指して" },
+      {
+        hid: "twitter:card",
+        property: "twitter:card",
+        content: "summary_large_image"
+      }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
@@ -24,7 +41,7 @@ export default {
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
-
+  ssr: true,
   target: "static",
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
