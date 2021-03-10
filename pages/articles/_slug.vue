@@ -56,7 +56,7 @@ h2:after{
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: var(--v-accent-base);
+    background-color: #000;
     opacity: .4;
 }
 h3{
