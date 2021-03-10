@@ -11,7 +11,11 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      {
+        hid: "description",
+        name: "description",
+        content: "ブログを頑張って更新しています。"
+      },
       {
         hid: "og:site_name",
         property: "og:site_name",

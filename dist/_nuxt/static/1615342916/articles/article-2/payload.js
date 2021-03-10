@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/articles/article-2", {data:[{page:{slug:"article-2",description:"二つ目です。",title:"二つ目",created_at:"2021-02-01T00:00:00.000Z",toc:[],body:{type:"root",children:[]},dir:"\u002Farticles",path:"\u002Farticles\u002Farticle-2",extension:".md",createdAt:"2021-03-07T15:50:30.606Z",updatedAt:"2021-03-07T16:43:16.190Z"}}],fetch:{},mutations:void 0});
