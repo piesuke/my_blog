@@ -1,5 +1,5 @@
 ---
-title:〇〇
+title: 〇〇
 description: シン・エヴァンゲリオンを観ての感想です。
 created_at: 2021-03-10
 tag: Book・Movie

@@ -18,8 +18,8 @@
 <script>
 export default {
   async asyncData ({ $content, params }) {
-    const slug = params.slug
-    const page = await $content('articles/'+ slug).fetch()
+    const query = $content('articles', params.slug)
+    const page = await query.fetch()
     return {
       page,
     }
