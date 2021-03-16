@@ -19,9 +19,9 @@
 export default {
   async asyncData ({ $content, params }) {
     const query = $content('articles', params.slug)
-    const page = await query.fetch()
+    const articles = await query.fetch()
     return {
-      page,
+      page:articles,
     }
   },
   
